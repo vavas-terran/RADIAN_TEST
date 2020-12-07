@@ -1,7 +1,7 @@
 body
     padding: 0
     margin: 0
-    font-family: 'Roboto', sans-serif
+    font-family: 'Arvo', 'Prompt', 'Roboto', sans-serif
     font-size: 20px
     color: #000
 
@@ -25,7 +25,63 @@ fieldset
     border: none
 
 .container
-    width: 98%
+    width: 1300px
     margin: 0 auto
 
 
+.header
+    
+    &_box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 125px
+    &_flag
+        background-image: url("../img/flag.svg")
+        width: 139px
+        height: 153px
+        .flag_text
+            font-size: 13px
+            font-family: 'Roboto'
+            font-weight: 700
+            letter-spacing: -0.33px
+            padding: 28px 14px 0
+            text-align: center
+        .flag_title
+            font-size: 30px
+            font-weight: 900
+            letter-spacing: 0px
+            color: #003E84
+            text-transform: uppercase
+            text-align: center
+    &_menu
+        width: 677px
+        .main_menu
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &_item
+                a
+                    height: 100%
+                    font-style: 17px
+                    color: #000000
+                    font-family: Prompt, sans-serif
+                    letter-spacing: 0px
+                    height: 100%
+                    &:hover
+                        border-bottom: 5px solid #FFBC21  
+    &_contacts
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 201px
+        font-family: Prompt, sans-serif
+        .contacts_call
+            color: #000
+            font-size: 35px
+        .contacts_mail
+            color: #000
+            font-size: 14px
+            letter-spacing: 0px
+            border-bottom: 1px solid #FFBC21 

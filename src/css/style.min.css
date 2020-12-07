@@ -1,7 +1,18 @@
-body{padding:0;margin:0;font-family:Roboto,sans-serif;font-size:20px;color:#000}
+body{padding:0;margin:0;font-family:Arvo,Prompt,Roboto,sans-serif;font-size:20px;color:#000}
 h1,h2,h3,h4,h5,h6{margin:0;padding:0}
 p{padding:0;margin:0}
 a{text-decoration:none}
 li,ul{display:block;padding:0;margin:0}
 fieldset{border:none}
-.container{width:98%;margin:0 auto}
+.container{width:1300px;margin:0 auto}
+.header_box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:125px}
+.header_flag{background-image:url(../img/flag.svg);width:139px;height:153px}
+.header_flag .flag_text{font-size:13px;font-family:Roboto;font-weight:700;letter-spacing:-.33px;padding:28px 14px 0;text-align:center}
+.header_flag .flag_title{font-size:30px;font-weight:900;letter-spacing:0;color:#003e84;text-transform:uppercase;text-align:center}
+.header_menu{width:677px}
+.header_menu .main_menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.header_menu .main_menu_item a{height:100%;font-style:17px;color:#000;font-family:Prompt,sans-serif;letter-spacing:0;height:100%}
+.header_menu .main_menu_item a:hover{border-bottom:5px solid #ffbc21}
+.header_contacts{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:201px;font-family:Prompt,sans-serif}
+.header_contacts .contacts_call{color:#000;font-size:35px}
+.header_contacts .contacts_mail{color:#000;font-size:14px;letter-spacing:0;border-bottom:1px solid #ffbc21}
