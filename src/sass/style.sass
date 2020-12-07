@@ -28,9 +28,8 @@ fieldset
     width: 1300px
     margin: 0 auto
 
-
 .header
-    
+
     &_box
         display: flex
         justify-content: space-between
@@ -69,7 +68,7 @@ fieldset
                     letter-spacing: 0px
                     height: 100%
                     &:hover
-                        border-bottom: 5px solid #FFBC21  
+                        border-bottom: 5px solid #FFBC21
     &_contacts
         display: flex
         flex-direction: column
@@ -84,4 +83,132 @@ fieldset
             color: #000
             font-size: 14px
             letter-spacing: 0px
-            border-bottom: 1px solid #FFBC21 
+            border-bottom: 1px solid #FFBC21
+
+.work
+    background: #F6F6F6
+    height: 123px
+    &_box
+        width: 100%
+        display: flex
+        justify-content: space-around
+        height: 123px
+    &_block
+        width: 332px
+        display: flex
+        justify-content: center
+        align-items: center
+        &_title
+            text-align: center
+            font-weight: 700
+            font-size: 34px
+            letter-spacing: 0px
+            color: #003E84
+            text-transform: uppercase
+            margin-right: 15px
+            img
+                margin-right: 15px
+        &_info
+            text-align: left
+            font-size: 16px
+            letter-spacing: 0px
+            font-family: Prompt, sans-serif
+
+    
+.catalog
+    &__tabs
+        margin-top: 54px
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+    &__tab
+        width: 265px
+        height: 70px
+        color: #6b6b6b
+        box-shadow: 0px 3px 16px #cacaca
+        letter-spacing: 0px
+        font-size: 16px
+        text-align: center
+        cursor: pointer
+        transition: 0.5s all
+        color: #000
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            box-shadow: 0px 3px 16px #8c8c8c
+            border: none
+        &_active
+            background: #003E84 
+            color: #fff
+            border: none
+            box-shadow: none
+            z-index: 1000
+
+    &__content
+        margin-top: 60px
+        display: none
+        justify-content: space-between
+        flex-wrap: wrap
+        &_active
+            display: flex
+    &-item
+        width: 431.3px
+        min-height: 311px
+        border: 1px solid #E2E2E2
+        overflow: hidden
+        &__main-block
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 20px 10px 0 54px
+        &__title
+            font-size: 24px
+            letter-spacing: 0px
+            font-weight: 400
+        &__text
+            font-size: 16px
+            font-weight: 400
+            line-height: 35px
+            width: 349px
+            margin: 20px 10px 0 54px
+            span
+                border-bottom: 1px solid #FFBC21
+    &__list
+        position: relative
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0%)
+        padding-right: 20px
+        transition: 0.5s all
+        padding-left: 19px
+        margin-bottom: 0
+        list-style-type: none
+        &_active
+            transform: translateX(-100%)
+            margin-left: 0px
+        &__back
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(calc(-50% - 19px))
+            display: block
+            font-size: 14px
+            font-weight: 500
+            text-decoration: underline
+            text-transform: uppercase
+            &:hover
+                color: red
+    &__wrapper
+        display: flex
+        width: calc(200% + 40px)
+    &__content
+        width: 100%
+        margin-right: 0px
+        transform: translateX(-100%)
+        transition: 0.5s all
+        &_active
+            transform: translateX(0%)
+            margin-right: 20px
+
