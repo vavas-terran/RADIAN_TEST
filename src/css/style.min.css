@@ -6,7 +6,7 @@ li,ul{display:block;padding:0;margin:0}
 fieldset{border:none}
 .container{width:1300px;margin:0 auto}
 .header_box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:125px}
-.header_flag{background-image:url(../img/flag.svg);width:139px;height:153px}
+.header_flag{background-image:url(../img/flag.svg);width:139px;height:153px;z-index:1000}
 .header_flag .flag_text{font-size:13px;font-family:Roboto;font-weight:700;letter-spacing:-.33px;padding:28px 14px 0;text-align:center}
 .header_flag .flag_title{font-size:30px;font-weight:900;letter-spacing:0;color:#003e84;text-transform:uppercase;text-align:center}
 .header_menu{width:677px}
@@ -16,6 +16,23 @@ fieldset{border:none}
 .header_contacts{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:201px;font-family:Prompt,sans-serif}
 .header_contacts .contacts_call{color:#000;font-size:35px}
 .header_contacts .contacts_mail{color:#000;font-size:14px;letter-spacing:0;border-bottom:1px solid #ffbc21}
+.carousel{position:relative}
+.carousel__inner__item{position:absolute;top:155px}
+.carousel__inner__item h2{color:#003e84;font-size:30px;font-weight:900;text-transform:uppercase;width:490px}
+.carousel__inner__item img{margin:10px 0 25px}
+.carousel__inner__item p{width:350px;font-size:17px;font-family:Prompt,serif;margin-bottom:40px}
+.carousel__inner__item button{width:287px;height:60px;font-size:17px;border:none;font-family:Prompt,serif;position:relative;background:#ffbc21;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:30px;-webkit-transition:all ease .3s;transition:all ease .3s}
+.carousel__inner__item button img{z-index:-1;margin:0;margin-left:10px}
+.carousel__inner__item button:before{position:absolute;content:"";background-image:url(../img/arrow.svg);width:19%;height:100%;top:0;left:auto;right:0;z-index:1;-webkit-transition:all .3s ease;transition:all .3s ease}
+.carousel__inner__item button:hover{cursor:pointer;padding-left:40px}
+.carousel__inner__item button:hover img{z-index:10}
+.carousel__inner__item button:hover:before{position:absolute;content:"";width:0;height:100%;top:0;right:0;z-index:1}
+.slick-dotted.slick-slider{margin-bottom:0}
+.slide_btn{background:red}
+.slick-dots{width:308px;height:70px;background:red;left:50%;-webkit-transform:translatex(-50%);transform:translatex(-50%);bottom:43px;-webkit-box-shadow:0 3px 16px #8c8c8c;box-shadow:0 3px 16px #8c8c8c;display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.slick-dots li button:before{color:#b2b2b2;font-size:12px}
+.slick-next{top:-50%;bottom:30px;background:red}
+.slick-next::before{display:none}
 .work{background:#f6f6f6;height:123px}
 .work_box{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;height:123px}
 .work_block{width:332px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -43,7 +60,10 @@ fieldset{border:none}
 .catalog__content{width:100%;margin-right:0;-webkit-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:.5s all;transition:.5s all}
 .catalog__content_active{-webkit-transform:translateX(0);transform:translateX(0);margin-right:20px}
 .footer{background:#003e84}
-.footer_information{margin-top:200px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.footer_logo{position:relative}
+.footer_logo_text{margin-top:78px}
+.footer_logo_bg{position:absolute;left:-160px}
+.footer_information{margin-top:72px;margin-bottom:100px;display:-webkit-box;display:-ms-flexbox;display:flex}
 .footer_information_block{width:306px}
 .footer_information_block h6{font-size:20px;color:#ffbc21;margin-bottom:30px;font-family:Prompt,sans-serif;font-weight:400}
 .footer_information_block p{font-size:16px;font-family:Roboto;color:#fff;line-height:40px}
@@ -54,3 +74,7 @@ fieldset{border:none}
 .footer_contacts a.contacts_mail{color:#fff;font-weight:100;margin-bottom:48px}
 .footer_contacts button.footer_contacts_btn{width:282px;height:50px;font-size:15px;font-family:Roboto;background:0 0;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;border:1px solid #ffffff3d;border-radius:29px}
 .footer_contacts button.footer_contacts_btn img{margin-right:14px}
+.footer_credits{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-bottom:50px}
+.footer_credits_info{font-size:14px;color:#5987bb}
+.footer_credits_info:nth-child(3){display:-webkit-box;display:-ms-flexbox;display:flex}
+.footer_credits_info:nth-child(3) p{margin-right:11px;width:120px}
