@@ -86,8 +86,7 @@ fieldset
             border-bottom: 1px solid #FFBC21
 
 .carousel
-    position: relative
-    &__ineer
+    position: relative !important
 
 .carousel__inner__item
     position: absolute
@@ -105,6 +104,7 @@ fieldset
         font-size: 17px
         font-family: Prompt, serif
         margin-bottom: 40px
+
     button
         width: 287px
         height: 60px
@@ -151,6 +151,20 @@ fieldset
                 right: 0
                 z-index: 1
 
+.slick-slide
+    min-height: 835px
+    height: auto !important
+    background-image: url('../img/first_slide.png')
+    background-size: captain
+    &:nth-child(2)
+        background-image: url(../img/second_slide.jpg)
+        background-size: cover
+    &:nth-child(3)
+        background-image: url(../img/third_slide.jpg)
+        background-size: cover
+        
+
+
 .slick-dotted.slick-slider
     margin-bottom: 0
 .slide_btn
@@ -160,8 +174,9 @@ fieldset
 .slick-dots 
     width: 308px
     height: 70px
-    background: red
-    left: 50%   
+    left: 50%
+    background: #fff
+    border: none   
     transform: translatex(-50%)
     bottom: 43px
     box-shadow: 0px 3px 16px #8c8c8c
@@ -169,23 +184,50 @@ fieldset
     align-items: center
     justify-content: center
 
-.slick-dots li button:before
-    color: #B2B2B2
-    font-size: 12px
 
+.slick-dots li button
+    &:before
+        content: ''
+        width: 12px
+        height: 12px
+        background: #E1E1E1
+        border-radius: 50%
+        z-index: 100
+        opacity: 1
+
+    
+.slick-dots li.slick-active button
+    &:before
+        content: ''
+        background: #FFBC21
+        width: 12px
+        height: 12px
+        opacity: 1
+
+
+.slick-arrow 
+    position: absolute
+    bottom: 65px
+    // width: 220px
+    // display: flex
+    // justify-content: space-between
 
 .slick-prev, .slick-next
-    // top: 0
-    // left: 50%
+    left: 43%
     // transform: translatex(-50%)
+    background: none
+    border: none
+    z-index: 10000
     
 
 .slick-next
-    top: -50%
-    bottom: 30px
+    // margin-left: 220px
     background: red
-    &::before
-        display: none
+    z-index: 10000
+    left: 55%
+    background: none
+    border: none
+    
 
 
 
