@@ -54,21 +54,42 @@ fieldset
             text-transform: uppercase
             text-align: center
     &_menu
-        width: 677px
+        width: 962px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 100%
         .main_menu
+            width: 677px
             display: flex
             justify-content: space-between
             align-items: center
+            height: 100%
             &_item
+                height: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
                 a
-                    height: 100%
-                    font-style: 17px
+                    font-size: 17px
                     color: #000000
                     font-family: Prompt, sans-serif
                     letter-spacing: 0px
                     height: 100%
+                    display: flex
+                    align-items: center
+                    position: relative
                     &:hover
-                        border-bottom: 5px solid #FFBC21
+                        &::before
+                            content: ''
+                            position: absolute  
+                            bottom: 0
+                            height: 5px
+                            width: 100%
+                            background:  #FFBC21
+
+                        // border-bottom: 5px solid #FFBC21
+                    
     &_contacts
         display: flex
         flex-direction: column
@@ -84,6 +105,9 @@ fieldset
             font-size: 14px
             letter-spacing: 0px
             border-bottom: 1px solid #FFBC21
+
+.closebtn
+    display: none
 
 .carousel
     position: relative !important
@@ -218,6 +242,7 @@ fieldset
     background: none
     border: none
     z-index: 10000
+    cursor: pointer
     
 
 .slick-next
@@ -448,7 +473,7 @@ fieldset
             display: flex
             align-items: center
             justify-content: center
-            border: 1px solid #ffffff3d
+            border: 1px solid #ffffff
             border-radius: 29px
             img
                 margin-right: 14px

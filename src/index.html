@@ -7,12 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link rel="stylesheet" href="css/general.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Prompt:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/mixins.css">
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 
@@ -32,8 +33,10 @@
                     </div>
                 </div>
 
-                <div class="header_menu">
-                    <ul class="main_menu">
+                <div class="header_menu sidenav" id="mySidenav">
+                    <ul class="main_menu ">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
                         <li class="main_menu_item">
                             <a href="#">
                                 Storitve 
@@ -64,13 +67,19 @@
                             </a>
                         </li>
                     </ul>
+                    <div class="header_contacts">
+                        <a title="To call" class="contacts_call" href="tel:041 625 519">041 625 519</a>
+                        <a title="Send mail" class="contacts_mail" href="mailto:info@slikopleskarstvo-habat.si">info@slikopleskarstvo-habat.si</a> 
+                    </div>
                 </div>
 
-                <div class="header_contacts">
-                    <a title="To call" class="contacts_call" href="tel:041 625 519">041 625 519</a>
-                    <a title="Send mail" class="contacts_mail" href="mailto:info@slikopleskarstvo-habat.si">info@slikopleskarstvo-habat.si</a> 
-                </div>
                 
+                
+            </div>
+            <div onclick="openNav()" class="open">
+                <span></span> 
+                <span></span> 
+                <span></span>
             </div>
         </div>
     </header>
@@ -78,7 +87,6 @@
     <section class="main_slider carousel">
         <div class="carousel__inner">
             <div class="slide">
-                <!-- <img src="img/first_slide.png" alt="slide"> -->
                 <div class="container">
                     <div class="carousel__inner__item">
                         <h2>
@@ -101,7 +109,6 @@
                 </div>
             </div>
             <div class="slide">
-                <!-- <img src="img/first_slide.png" alt="slide"> -->
                 <div class="container">
                     <div class="carousel__inner__item">
                         <h2>
@@ -124,7 +131,6 @@
                 </div>
             </div>
             <div class="slide">
-                <!-- <img src="img/first_slide.png" alt="slide"> -->
                 <div class="container">
                     <div class="carousel__inner__item">
                         <h2>
